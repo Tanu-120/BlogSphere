@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.db
+
+# Env files
+.env
+backend/.env
+frontend/.env
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Uploads (user content, not source)
+backend/app/uploads/*
+!backend/app/uploads/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
