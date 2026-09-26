@@ -163,3 +163,5 @@ def test_comment_with_a_threat_is_blocked(client):
     post_id = create.json()["id"]
     blocked = client.post(f"/api/posts/{post_id}/comments", json={"content": "kill yourself"}, headers=headers)
     assert blocked.status_code == 422
+    insult = client.post(f"/api/posts/{post_id}/comments", json={"content": "bastard"}, headers=headers)
+    assert insult.status_code == 422

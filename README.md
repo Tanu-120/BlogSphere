@@ -54,7 +54,7 @@ The response includes `search_models`, and the page shows those names. If `ANTHR
 
 The same keys power **Generate AI summary** on a post the member owns. If the key is missing, the call fails, or the response is unusable, the summary is a short extract of the essay and the API reports `source: fallback`.
 
-New posts and comments are screened before they are saved. With a key, the provider returns allow or block. Without a key, a local weighted-phrase model does the same job. A blocked text returns `422` and is not stored.
+New posts and comments are screened before they are saved. With a key, the provider returns allow or block. Without a key, a local weighted-phrase model does the same job: threats, slurs, and insults such as “bastard” score above the block line. A blocked text returns `422` and is not stored. Ordinary criticism stays under the line.
 
 ## Views
 

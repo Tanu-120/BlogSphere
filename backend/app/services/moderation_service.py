@@ -24,6 +24,9 @@ _WEIGHTS = {
     "child porn": 3.0,
     "nigger": 2.6,
     "faggot": 2.2,
+    "bastard": 2.0,
+    "asshole": 2.0,
+    "bitch": 2.0,
 }
 _THRESHOLD = 1.5
 _PROMPT = (
